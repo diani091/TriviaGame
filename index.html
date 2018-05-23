@@ -5,23 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <link rel="stylesheet" href="assets/reset.css">
     <link rel0"stylesheet" href="assets/style.css">
+    
     <title>Trivia Game</title>
 </head>
 <body>
+        <div class="row">
+                <div class="col s12 m7">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="assets/images/thumb-1920-271235.jpg">
+                      <span class="card-title">Lord Of the Rings Trivia</span>
+                    </div>
+                    <div class="card-content" id="questions">
+                            <button type="button" class="btn btn-primary btn-lg" id="startButton" onclick="start()">START</button>
+                    </div>
+                    <div class="card-action" id="timer">
+                    </div>
+                  </div>
+                </div>
+            </div>
 
-<div class="container"> 
-        <header>
-            <h1> TOTALLY TRIVIAL GAME</h1>
-        </header>
-        <button type="button" class="btn btn-primary btn-lg" id="startButton" onclick="start()">START</button>
-        <div id="timer">
-
+    <div class="row1">
+        <div class="col" id="answers">
+                        
         </div>
-        <div id="questions">
+        <div class="col" id="counters">
+                        
         </div>
-          
+    </div>
+      
 <script src="assets/javascript/app.js"></script>
+</div>
 </body>
-</html>|
+</html>
